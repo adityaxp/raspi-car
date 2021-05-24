@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "878920168806",
+    "firebase_url": "https://raspi-car-internet-control-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "raspi-car-internet-control",
+    "storage_bucket": "raspi-car-internet-control.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878920168806:android:5b0e5064531fd3eaf044a7",
+        "android_client_info": {
+          "package_name": "com.aditya.raspicarcontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878920168806-rn1qb9cp8ebfsf62tp5cu660j716p45d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2O3knuGEL1rcLRmxTIKHfaL-4z3ezVQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878920168806-rn1qb9cp8ebfsf62tp5cu660j716p45d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

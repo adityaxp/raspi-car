@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/raspilogo"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moveForward"
+        android:text="W"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@color/colorPrimary"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moveBackward"
+        android:text="s"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/moveForward"
+        android:background="@color/colorPrimary"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:id="@+id/turnRight"
+        android:layout_marginLeft="45dp"
+        android:layout_alignBaseline="@id/moveBackward"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/turnLeft"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:layout_alignBaseline="@id/moveBackward"
+        android:layout_marginLeft="275dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/carState"
+        android:layout_below="@id/moveBackward"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:text="Car state: "
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carState"
+        android:id="@+id/controlInfo"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="Controls: \n\n W - Move Forward \n A - Turn Right \n D - Turn Left \n S - Move Backward"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop raspi-car"
+        android:id="@+id/stopCar"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/controlInfo"
+        />
+     </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
